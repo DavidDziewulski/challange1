@@ -24,47 +24,47 @@
           <!-- Form Register  -->
           <form id="register" class="form">
             <fieldset class="form__bgc">
-              <label class="form__box">
+              <label for="registerUserName" class="form__box">
                 <i class="icon fas fa-user"></i>
-                <input type="text" autofocus name="userName" class="form__box__control" pattern="[A-z]{4,10}" required
+                <input type="text" id="registerUserName" autofocus name="userName" class="form__box__control" pattern="[A-z]{4,10}" required
                   minlength="4" maxlength="10" placeholder="User Name"> </label>
 
-              <label class="form__box">
+              <label for="registerUserPassword" class="form__box">
 
                 <i class="icon fas fa-lock"></i>
 
-                <input type="password" name="password" class="form__box__control" pattern="[A-z]{4,10}" required
+                <input type="password" id="registerUserPassword" name="password" class="form__box__control" pattern="[A-z]{4,10}" required
                   minlength="4" maxlength="10" placeholder="Password">
               </label>
-              <label class="form__box">
+              <label for="registerUserCheckPassword" class="form__box">
                 <i class="icon fas fa-lock"></i>
-                <input type="password" name="passwordcheck" class="form__box__control" pattern="[A-z]{4,10}" required
+                <input id="registerUserCheckPassword" type="password" name="passwordcheck" class="form__box__control" pattern="[A-z]{4,10}" required
                   minlength="4" maxlength="10" placeholder="Confirm Password">
               </label>
-              <label class="form__box">
+              <label for="registerUserEmail" class="form__box">
                 <i class="icon fas fa-envelope"></i>
-                <input type="email" name="email" class="form__box__control"
+                <input type="email"id="registerUserEmail" name="email" class="form__box__control"
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required minlength="4" maxlength="20"
                   placeholder="Email">
               </label>
-              <label class="form__box">
+              <label class="form__box" for="registerUserLocation" >
                 <i class="icon fas fa-map-marker-alt"></i>
-                <select class="form__box__select" name="city" id="pet-select" required>
-                  <option class="form__box__select" disabled selected hidden>Your Location</option>
-                  <option  value="city">Warsaw</option>
-                  <option value="city">Berlin</option>
-                  <option value="city">Madrid</option>
-                  <option value="city">Paris</option>
+                <select id="registerUserLocation" class="form__box__select" name="city" id="pet-select" required>
+                  <option class="form__box__select" value="" disabled selected hidden>Your Location</option>
+                  <option  value="warsaw">Warsaw</option>
+                  <option value="berlin">Berlin</option>
+                  <option value="madrid">Madrid</option>
+                  <option value="paris">Paris</option>
 
                 </select>
 
               </label>
-              <label class="form__box form__box--check"> <input type="checkbox" checked required class="form__box__hatch"><span
+              <label for="registerAccpet" class="form__box form__box--check"> <input type="checkbox" id="registerAccpet" checked required class="form__box__hatch"><span
                   class="form__box__hatch__text">I have
                   read and accept the terms of use.</span></label>
 
-              <label class="form__box  ">
-                <button class="form__box__submite">Sign Up</button>
+              <label for="registerButton" class="form__box  ">
+                <button id="registerButton" class="form__box__submite">Sign Up</button>
               </label>
 
 
@@ -77,32 +77,32 @@
 
           <!-- Form Send Email -->
           <form id="sendEmail" class="form ">
-            <fieldset class="form__bgc">
-              <label class="form__box">
+            <fieldset  class="form__bgc">
+              <label for="sendUserName" class="form__box">
                 <i class="icon fas fa-user "></i>
-                <input type="text" name="userName" class="form__box__control" pattern="[A-z]{4,10}" required
+                <input type="text" name="userName" id="sendUserName" class="form__box__control" pattern="[A-z]{4,10}" required
                   minlength="4" maxlength="10" placeholder="User Name"> </label>
-              <label class="form__box">
+              <label for="sendUserMeil" class="form__box">
                 <i class="icon fas fa-envelope"></i>
-                <input type="email" name="email" class="form__box__control"
+                <input id="sendUserMeil" type="email" name="email" class="form__box__control"
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required minlength="4" maxlength="20"
                   placeholder="Email">
               </label>
 
 
-              <label class="form__box">
-                <textarea class="form__box__note" required name="userText" cols="30" rows="8" pattern="[a-z0-9._%+-]"
+              <label for="sendMessage" class="form__box">
+                <textarea id="sendMessage" class="form__box__note" required name="userText" cols="30" rows="8" 
                   placeholder="Type your message"></textarea>
 
               </label>
-              <label class="form__box form__box--check"> <input type="checkbox" required 
+              <label for="sendAccept" class="form__box form__box--check"> <input type="checkbox" id="sendAccept" required 
                name="check" class="form__box__hatch"><span
                 class="form__box__hatch__text">I have
                 read and accept the terms of use.</span></label>
 
 
-                <label class="form__box  ">
-                  <button class="form__box__submite">Send Email</button>
+                <label for="sendButton" class="form__box  ">
+                  <button id="sendButton" class="form__box__submite">Send Email</button>
                 </label>
   
             </fieldset>
@@ -118,21 +118,21 @@
           <!-- Form  Sign In Form  -->
           <form id="signInForm" class="form ">
             <fieldset class="form__bgc">
-              <label class="form__box ">
+              <label for="signUserName" class="form__box ">
                 <i class="icon fas fa-user "></i>
-                <input type="text" name="userName" class="form__box__control" pattern="[A-z]{4,10}" required minlength="4" maxlength="10"
+                <input type="text" id="signUserName" name="userName" class="form__box__control" pattern="[A-z]{4,10}" required minlength="4" maxlength="10"
                   placeholder="UserName"> </label>
-              <label class="form__box ">
+              <label for="signPassword" class="form__box ">
                 <i class="icon fas fa-lock"></i>
 
-                <input type="password" name="password" class="form__box__control" pattern="[A-z]{4,10}" required minlength="4" maxlength="10"
+                <input type="password" id="signPassword" name="password" class="form__box__control" pattern="[A-z]{4,10}" required minlength="4" maxlength="10"
                   placeholder="Password">
               </label>
 
 
 
               <div class="form__box form__box--check form__box--cols">
-                <label class="form__box form__box--check "> <input type="checkbox"  class="form__box__hatch"><span
+                <label for="signCheck" class="form__box form__box--check "> <input id="signCheck" type="checkbox"  class="form__box__hatch"><span
                   class="form__box__hatch__text">Remember Me</span></label>
 
 
@@ -155,14 +155,14 @@
           <form id="recoverForm" class="form ">
             <fieldset class="form__bgc">
 
-              <label class="form__box">
+              <label for="recoverEmail" class="form__box">
                 <i class="icon fas fa-envelope"></i>
-                <input type="email" name="email" class="form__box__control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required
+                <input type="email" id="recoverEmail" name="email" class="form__box__control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required
                   minlength="4" maxlength="20" placeholder="Enter your Email">
               </label>
-              <label class="form__box">
+              <label for="recoverPhone" class="form__box">
                 <i class="icon fas fa-mobile-alt"></i>
-                <input type="tel" name="phone" class="form__box__control" pattern="[0-9]{9}" required 
+                <input type="tel" id="recoverPhone" name="phone" class="form__box__control" pattern="[0-9]{9}" required 
                   placeholder="Enter your Phone number give">
               </label>
 
@@ -170,14 +170,14 @@
             
               
 
-              <label class="form__box form__box--check form__box--cols">
+              <div class="form__box form__box--check form__box--cols">
                  
                   <button class="form__box__submite form__box__submite--width">Sign Up</button>
                 
                   <button disabled="disabled" class="form__box__submite form__box__submite--width  form__box__submite--done ">Done</button>
                 
  
-              </label>
+              </div>
 
 
 
@@ -190,9 +190,9 @@
           <form id="subscribe" class="form ">
             <fieldset class="form__bgc">
 
-              <label class="form__box">
+              <label for="subscribeEmail" class="form__box">
                 <i class="icon fas fa-envelope"></i>
-                <input type="email" name="email" class="form__box__control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required
+                <input id="subscribeEmail" type="email" name="email" class="form__box__control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required
                   minlength="4" maxlength="20" placeholder="Enter your Email">
               </label>
               
@@ -201,14 +201,14 @@
 
               
 
-              <label class="form__box form__box--check form__box--cols">
+              <div class="form__box form__box--check form__box--cols">
                  
                   <button class="form__box__submite form__box__submite--width">Sign Up</button>
                 
                   <button class="form__box__submite form__box__submite--width form__box__submite--cancel">No,Thanks</button>
                 
 
-              </label>
+              </div>
 
 
 
