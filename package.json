@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack --mode development --watch ",
-    "build": "webpack --mode production --watch"
+    "build": "webpack --mode production --watch",
+    "test": "Yarn standard src/**/*.js",
+    "test:fix": "Yarn standard src/**/*.js --fix"
   },
   "browserslist": [
     "last 1 version",
@@ -42,6 +44,7 @@
   },
   "dependencies": {
     "imagemin-webpack-plugin": "^2.4.2",
-    "requirejs": "^2.3.6"
+    "requirejs": "^2.3.6",
+    "standard": "^14.3.3"
   }
 }

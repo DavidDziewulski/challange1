@@ -1,9 +1,8 @@
-{
-  "presets": [
-    [
-      "@babel/preset-env", {
-        "useBuiltIns": "entry",
-      }
-    ]
+{ 'presets' [
+  [
+    '@babel/preset-env', {
+      useBuiltIns: 'entry'
+    }
   ]
+]
 }
